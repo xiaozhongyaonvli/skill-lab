@@ -1,0 +1,33 @@
+{
+  "topics": [
+    "python",
+    "agents",
+    "context engineering"
+  ],
+  "languages": [
+    "Python"
+  ],
+  "preferred_issue_types": [
+    "bug",
+    "debug",
+    "good first issue"
+  ],
+  "preferred_labels": [
+    "good first issue",
+    "help wanted",
+    "bug"
+  ],
+  "excluded_labels": [
+    "discussion",
+    "question",
+    "wontfix"
+  ],
+  "difficulty": "beginner",
+  "min_stars": 50,
+  "max_repo_candidates": 12,
+  "max_selected_repos": 5,
+  "prefer_recent_activity": true,
+  "prefer_unassigned_issues": true,
+  "prefer_unlinked_issues": true,
+  "notes": "Prefer agent tooling and context-engineering repositories. Bias toward bounded debugging tasks."
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Interest to PR Finder"
+  short_description: "Find GitHub repos and unclaimed issues for your interests"
+  default_prompt: "Use $interest-to-pr-finder to find GitHub repositories and suitable open issues for my interests."
