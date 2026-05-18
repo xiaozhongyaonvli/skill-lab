@@ -19,6 +19,7 @@
 skills-lab/
 ├─ README.md
 ├─ interest-to-pr-finder/
+├─ trace-to-skill/
 └─ ...
 ```
 
@@ -44,6 +45,27 @@ skills-lab/
 - 想找适合自己参与的开源仓库
 - 想根据技术方向筛选 issue
 - 想把仓库筛选与 issue 调研过程沉淀下来，便于后续继续推进
+
+### 2. trace-to-skill
+
+路径：`trace-to-skill/`
+
+用途：
+用于将一段显式开始、显式结束的用户操作流程记录为结构化事件，并在结束后整理成可复用的 Skill 草稿。
+
+当前能力：
+
+- 支持按开始/结束边界创建一次 capture
+- 支持将流程记录为结构化事件流
+- 支持把事件流汇总为 Markdown 摘要
+- 支持从事件流生成 Skill 草稿初版
+- 支持为后续正式 Skill 提供 `SKILL.md` 生成骨架
+
+适用场景：
+
+- 想把一次真实操作流程沉淀成可复用方法
+- 想从用户和 assistant 的协作步骤中反向提炼 pipeline
+- 想先记录再整理，而不是一开始就手写 Skill
 
 ## 维护方式
 

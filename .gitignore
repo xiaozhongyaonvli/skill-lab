@@ -2,3 +2,10 @@ __pycache__/
 *.pyc
 
 interest-to-pr-finder/cache/
+
+# trace-to-skill runtime artifacts
+trace-to-skill/captures/
+trace-to-skill/state/
+trace-to-skill/.trace-to-skill-data/
+trace-to-skill/skill-trace-data-test/
+trace-to-skill/skill-*.md
