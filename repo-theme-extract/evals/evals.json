@@ -1,0 +1,43 @@
+{
+  "skill_name": "repo-theme-extract",
+  "evals": [
+    {
+      "id": 0,
+      "eval_name": "mysql-observer",
+      "prompt": "我在学《Head First 设计模式》观察者那章,想拿 MySQL 主从复制做一个工程化样本。仓库 https://github.com/mysql/mysql-server,主题是 binlog 写入 → dump 线程 → slave IO 线程 → SQL 线程 这条事件分发链,我想看清楚它和教科书观察者模式的差异。仿照我之前那个 Redis 内存淘汰策略的精读案例做(参见 笔记/第一章/项目/redis内存淘汰策略/),最终产物放到 笔记/第一章/项目/mysql_binlog_observer/ 下,包括精简代码 + 阅读指南.md。",
+      "expected_output": "目录 mysql-server/<原仓库子路径>/<精简后文件>(3~5 个) + 阅读指南.md,精简文件有学习注释和中文翻译,阅读指南包含 ASCII 大图、文件角色对照表、和标准观察者模式的差异表、新增 X 要改哪里的练习题。",
+      "files": [],
+      "expectations": [
+        "产物目录包含 阅读指南.md 文件",
+        "产物包含至少 3 个精简后的代码文件",
+        "代码文件保留了原仓库子路径结构(例如 mysql-server/sql/ 或类似)",
+        "没有 .full 后缀临时文件残留",
+        "阅读指南.md 包含 ASCII 大图(含 ┌ │ └ 等框线字符或多行图)",
+        "阅读指南.md 包含'文件角色对照表'(或同义表格)",
+        "阅读指南.md 包含和标准观察者模式的差异表(5~8 个维度)",
+        "阅读指南.md 结尾有'新增 X 要改哪里'的练习题",
+        "至少一个精简代码文件含中文注释(中文字符比例 > 5%)",
+        "至少一个精简代码文件含 ★ 标注"
+      ]
+    },
+    {
+      "id": 1,
+      "eval_name": "netfilter-chain",
+      "prompt": "想做一份责任链模式的精读案例,选 Linux 内核 netfilter(iptables 后面的钩子链)。仓库 https://github.com/torvalds/linux,主题是 NF_HOOK 的注册、链表组织、遍历调用那部分——这是责任链模式最经典的内核实例。和我之前那个 Redis 内存淘汰精读案例同一种格式(参见 笔记/第一章/项目/redis内存淘汰策略/),最终产物放到 笔记/第一章/项目/netfilter_chain_of_responsibility/ 下。",
+      "expected_output": "目录 linux/<原仓库子路径>/<精简后文件>(3~5 个) + 阅读指南.md,精简文件有学习注释和中文翻译,阅读指南包含 ASCII 大图、文件角色对照表、和标准责任链模式的差异表、新增 X 要改哪里的练习题。",
+      "files": [],
+      "expectations": [
+        "产物目录包含 阅读指南.md 文件",
+        "产物包含至少 3 个精简后的代码文件",
+        "代码文件保留了原仓库子路径结构(例如 linux/net/netfilter/ 或 linux/include/linux/)",
+        "没有 .full 后缀临时文件残留",
+        "阅读指南.md 包含 ASCII 大图",
+        "阅读指南.md 包含'文件角色对照表'",
+        "阅读指南.md 包含和标准责任链模式的差异表(5~8 个维度)",
+        "阅读指南.md 结尾有'新增 X 要改哪里'的练习题",
+        "至少一个精简代码文件含中文注释",
+        "至少一个精简代码文件含 ★ 标注"
+      ]
+    }
+  ]
+}
